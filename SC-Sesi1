@@ -1,0 +1,795 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOc/thI/JnVva2jJSmuakNa",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Agnes2510/SC/blob/main/SC-Sesi1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "mX9BnDSx58pw"
+      },
+      "outputs": [],
+      "source": [
+        "print (\"haloo\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(time.ctime())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n2dZCjWRHW20",
+        "outputId": "6100b6be-7136-4869-9873-c9a3f8efab35"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Thu Feb  6 11:59:49 2025\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import time"
+      ],
+      "metadata": {
+        "id": "R2A0DWrTH4cL"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#print bisa dengna langsung menulisan variabel atau print ([variabel])\n",
+        "\n",
+        "z = \"hello\"\n",
+        "y = 20\n",
+        "c = 30.8\n",
+        "f = [\"apple\", \"berry\"]\n",
+        "\n",
+        "z, y, c, f\n",
+        "print (z, y, c, f)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QdncHaT3H6WZ",
+        "outputId": "90c22c31-64cb-48a2-ec10-c998cdbbf5c0"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "hello 20 30.8 ['apple', 'berry']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#casting = mengubah tipe data\n",
+        "\n",
+        "o = int(1)\n",
+        "y = int(2.8)\n",
+        "z = int (\"3\")\n",
+        "j = str(20)\n",
+        "\n",
+        "print (o, y, z, j)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wnLeVgyeItEd",
+        "outputId": "9a0e80f6-b831-432f-ed46-9d33ffb547cb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1 2 3 20\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#menggabungkan 2 string\n",
+        "\n",
+        "a = \"HELLO\"\n",
+        "b = \" world\"\n",
+        "c = a + b\n",
+        "print (c)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HwYCJYjKI6pi",
+        "outputId": "c6bff3a5-f031-43b7-d800-a27a3dce9168"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "HELLO world\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#mengambil 1 huruf menggunakan index (array of)\n",
+        "#menghitung total array\n",
+        "\n",
+        "a = \"Hello World\"\n",
+        "print (a[1])\n",
+        "\n",
+        "print (len(a))\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CKRnecYPJOkn",
+        "outputId": "2a7db7c9-372c-4e0c-8ca3-ab0a9b83307d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "e\n",
+            "11\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#mengambil beberapa huruf menggunakan index (array of)\n",
+        "#dengan cara print (variabel[batas awal : batas akhir])\n",
+        "\n",
+        "b = \"BINUS Univ\"\n",
+        "print (b[2 : 5])\n",
+        "\n",
+        "c =  \"BINUS Univ\"\n",
+        "print (b[:5])\n",
+        "\n",
+        "d = \"BINUS Univ\"\n",
+        "print (b[2:])"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "LSRAjArjKFTg",
+        "outputId": "3d50a57b-54b3-493a-efcf-fdbc296ed527"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "NUS\n",
+            "BINUS\n",
+            "NUS Univ\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#mengubah semua huruf kecil menjadi huruf besar\n",
+        "a = \"Hello\"\n",
+        "print (a.upper())\n",
+        "\n",
+        "#mengubah semua huruf besar menjadi huruf kecil\n",
+        "b = \"Hello\"\n",
+        "print(b.lower())\n",
+        "\n",
+        "#mengganti satu huruf\n",
+        "c=\"Hello\"\n",
+        "print(a.replace(\"H\", \"J\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "7ANGT5MeZWq9",
+        "outputId": "fab8d240-2673-47c9-e4a5-4daae1bd6256"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "HELLO\n",
+            "hello\n",
+            "Jello\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#print string gabung integer\n",
+        "\n",
+        "nama = \"Natasha\"\n",
+        "x = 19\n",
+        "string = \"nama saya {}, umur saya {}\"\n",
+        "print (string.format(nama, x))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "swscDjRqZsHd",
+        "outputId": "02a1e333-b94b-4618-f966-a088adb7f921"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "nama saya Natasha, umur saya 19\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#memberikan penomoran untuk setiap index yang terdapat pada string dengan perulangan for\n",
+        "\n",
+        "nama = \"Grace\"\n",
+        "for i in enumerate(nama):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GC_kGV01aZdl",
+        "outputId": "c74b12e8-70f5-416b-875b-c7d9ff264a2c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "(0, 'G')\n",
+            "(1, 'r')\n",
+            "(2, 'a')\n",
+            "(3, 'c')\n",
+            "(4, 'e')\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#def = membuat function baru\n",
+        "\n",
+        "def perbandingan (a,b):\n",
+        "  #perbandingan (if, elif, else)\n",
+        "  if a > b:\n",
+        "    print (\"a lebih besar dari b\")\n",
+        "  elif a < b:\n",
+        "    print (\"a kurang dari b\")\n",
+        "  else:\n",
+        "    print (\"a = b\")"
+      ],
+      "metadata": {
+        "id": "asoUUczramAp"
+      },
+      "execution_count": 48,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#mencoba function perbandingan\n",
+        "\n",
+        "perbandingan (4, 8)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "iUXNfgZia2YE",
+        "outputId": "68242c68-e331-4fe4-9095-a87d53018cdb"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a kurang dari b\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#perulangan menggunakan while\n",
+        "i = 1\n",
+        "while i < 6:\n",
+        "  print (i)\n",
+        "  i += 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "qAmCex-ta8kV",
+        "outputId": "43d3aec7-289e-413a-b020-df862158215b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#perulangan menggunakan for\n",
+        "\n",
+        "i = 7\n",
+        "for i in range(0,6):\n",
+        "  print(i)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ocw4ezFDbEUj",
+        "outputId": "e49148bf-3f39-4bdd-9855-dfe99b2c3d0a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "4\n",
+            "5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 2\n",
+        "while i <= 40:\n",
+        "  if i %2 == 0:\n",
+        "    print (i, \"genap\")\n",
+        "  elif i %2 == 1:\n",
+        "    print (i, \"ganjil\")\n",
+        "  i += 1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "pOKoObUYbL7X",
+        "outputId": "d908f063-6e22-49bf-e32e-0669813378c3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2 genap\n",
+            "3 ganjil\n",
+            "4 genap\n",
+            "5 ganjil\n",
+            "6 genap\n",
+            "7 ganjil\n",
+            "8 genap\n",
+            "9 ganjil\n",
+            "10 genap\n",
+            "11 ganjil\n",
+            "12 genap\n",
+            "13 ganjil\n",
+            "14 genap\n",
+            "15 ganjil\n",
+            "16 genap\n",
+            "17 ganjil\n",
+            "18 genap\n",
+            "19 ganjil\n",
+            "20 genap\n",
+            "21 ganjil\n",
+            "22 genap\n",
+            "23 ganjil\n",
+            "24 genap\n",
+            "25 ganjil\n",
+            "26 genap\n",
+            "27 ganjil\n",
+            "28 genap\n",
+            "29 ganjil\n",
+            "30 genap\n",
+            "31 ganjil\n",
+            "32 genap\n",
+            "33 ganjil\n",
+            "34 genap\n",
+            "35 ganjil\n",
+            "36 genap\n",
+            "37 ganjil\n",
+            "38 genap\n",
+            "39 ganjil\n",
+            "40 genap\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for i in range(2, 41):\n",
+        "  if i %2 == 0:\n",
+        "    print (i, \"genap\")\n",
+        "  elif i %2 == 1:\n",
+        "    print (i, \"ganjil\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "JxnNNBw5beJY",
+        "outputId": "fee6ecec-d400-405a-85a7-de67a9160a96"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2 genap\n",
+            "3 ganjil\n",
+            "4 genap\n",
+            "5 ganjil\n",
+            "6 genap\n",
+            "7 ganjil\n",
+            "8 genap\n",
+            "9 ganjil\n",
+            "10 genap\n",
+            "11 ganjil\n",
+            "12 genap\n",
+            "13 ganjil\n",
+            "14 genap\n",
+            "15 ganjil\n",
+            "16 genap\n",
+            "17 ganjil\n",
+            "18 genap\n",
+            "19 ganjil\n",
+            "20 genap\n",
+            "21 ganjil\n",
+            "22 genap\n",
+            "23 ganjil\n",
+            "24 genap\n",
+            "25 ganjil\n",
+            "26 genap\n",
+            "27 ganjil\n",
+            "28 genap\n",
+            "29 ganjil\n",
+            "30 genap\n",
+            "31 ganjil\n",
+            "32 genap\n",
+            "33 ganjil\n",
+            "34 genap\n",
+            "35 ganjil\n",
+            "36 genap\n",
+            "37 ganjil\n",
+            "38 genap\n",
+            "39 ganjil\n",
+            "40 genap\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#mengakese library numpy, diberikan inisial \"ny\"\n",
+        "#sehingga cukup menuliskan \"ny\" untuk mengakses library numpy\n",
+        "import numpy as np"
+      ],
+      "metadata": {
+        "id": "RFWS2owmbmE8"
+      },
+      "execution_count": 49,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "y = np.array ([[1,2,3],\n",
+        "        [4,5,6]])\n",
+        "x = np.array([[6,5,4],\n",
+        "              [3,2,1]])"
+      ],
+      "metadata": {
+        "id": "YRF8f3qgbpeY"
+      },
+      "execution_count": 50,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "x + y"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Hu-hQzCVb3wg",
+        "outputId": "6d5ab41b-14da-4719-911f-fe878df8b3bd"
+      },
+      "execution_count": 51,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "array([[7, 7, 7],\n",
+              "       [7, 7, 7]])"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 51
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "data = np.array ([10, 9, 8, 7,6, 5])\n",
+        "\n",
+        "print (\"Rata-rata:\", np.mean(data))\n",
+        "print (\"Max: \", no.max(data))\n",
+        "print (\"Min: \", np.min(data))\n",
+        "print (\"Standar Deviasi: \", np.std(data))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 211
+        },
+        "id": "Ecr6xi1NcFeF",
+        "outputId": "aecee36b-dbd6-4f9c-aefe-12a43ae6ace7"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'np' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m<ipython-input-34-9d2f64db9a64>\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mdata\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0marray\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m10\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m9\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m8\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m7\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m6\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;36m5\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0mprint\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0;34m\"Rata-rata:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmean\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mdata\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mprint\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0;34m\"Max: \"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mno\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmax\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mdata\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mprint\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0;34m\"Min: \"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mmin\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mdata\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'np' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def login():\n",
+        "  Username = \"Agnes Giovanny\"\n",
+        "  Password = \"Admin123\"\n",
+        "\n",
+        "  while True:\n",
+        "      username = input(\"Masukkan username anda : \")\n",
+        "      password = input(\"Masukkan password anda : \")\n",
+        "\n",
+        "      if (username == Username) and (password == Password):\n",
+        "        print (f\"Login berhasil, Selamat datang {username} \\n\")\n",
+        "        break\n",
+        "      else:\n",
+        "        print (\"Login gagal\")\n",
+        ""
+      ],
+      "metadata": {
+        "id": "Wg52y5dKLnar"
+      },
+      "execution_count": 34,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def nilai (UAS, UTS, ASG):\n",
+        "  return (0.5 * UAS) + (0.3 * UTS) + (0.2 * ASG)\n"
+      ],
+      "metadata": {
+        "id": "VfHoY8y-VMP4"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def grades (score) :\n",
+        "  if (score >= 90):\n",
+        "    return (\"A\")\n",
+        "  elif (score >= 85):\n",
+        "    return (\"A-\")\n",
+        "  elif (score >= 80):\n",
+        "    return (\"B+\")\n",
+        "  elif (score >= 75):\n",
+        "    return (\"B\")\n",
+        "  elif (score >= 70):\n",
+        "    return (\"B-\")\n",
+        "  elif (score >= 65):\n",
+        "    return (\"C\")\n",
+        "  elif (score >= 60):\n",
+        "    return (\"D\")\n",
+        "  elif (score >= 11):\n",
+        "    return (\"E\")\n",
+        "  else : return (\"F\")"
+      ],
+      "metadata": {
+        "id": "IiknIb3nVgMI"
+      },
+      "execution_count": 33,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "def main ():\n",
+        "  login()\n",
+        "\n",
+        "  namasiswa = input(\"Masukkan nama siswa : \")\n",
+        "  while True :\n",
+        "    nilaiUAS = float (input(\"Masukkan nilai UAS : \"))\n",
+        "\n",
+        "    if (nilaiUAS >= 0 and nilaiUAS <= 100):\n",
+        "      break\n",
+        "    else: print (\"Nilai UAS harus antara 0 - 100\")\n",
+        "\n",
+        "  while True :\n",
+        "    nilaiUTS = float (input(\"Masukkan nilai UTS : \"))\n",
+        "\n",
+        "    if (nilaiUTS >= 0 and nilaiUTS <= 100):\n",
+        "      break\n",
+        "    else: print (\"Nilai UTS harus antara 0 - 100\")\n",
+        "\n",
+        "  while True :\n",
+        "    nilaiASG = float (input(\"Masukkan nilai Assignment : \"))\n",
+        "\n",
+        "    if (nilaiASG >= 0 and nilaiASG <= 100):\n",
+        "      break\n",
+        "    else: print (\"Nilai Assignment harus antara 0 - 100\")\n",
+        "\n",
+        "  score = nilai(nilaiUAS, nilaiUTS, nilaiASG)\n",
+        "  finalgrade = grades(score)\n",
+        "\n",
+        "  print (\"\\n\\n============================================\")\n",
+        "  print (f\"Hasil perolehan nilai {namasiswa}\")\n",
+        "  print (f\"Final Score: {score:.1f}\")\n",
+        "  print (f\"Grade: {finalgrade}\")\n",
+        "  print (\"============================================\")\n"
+      ],
+      "metadata": {
+        "id": "J8DUpy16WXEW"
+      },
+      "execution_count": 46,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "  if __name__ == \"__main__\":\n",
+        "    main()"
+      ],
+      "metadata": {
+        "id": "tzamQvu5XN2W",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "71018f39-1d6e-4ec1-b316-7e8250746d96"
+      },
+      "execution_count": 47,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Masukkan username anda : Agnes Giovanny\n",
+            "Masukkan password anda : Admin123\n",
+            "Login berhasil, Selamat datang Agnes Giovanny \n",
+            "\n",
+            "Masukkan nama siswa : Reynard\n",
+            "Masukkan nilai UAS : 0\n",
+            "Masukkan nilai UTS : 0\n",
+            "Masukkan nilai Assignment : 0\n",
+            "\n",
+            "\n",
+            "============================================\n",
+            "Hasil perolehan nilai Reynard\n",
+            "Final Score: 0.0\n",
+            "Grade: F\n",
+            "============================================\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
